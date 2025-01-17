@@ -1,0 +1,51 @@
+services:
+  kestra:
+    image: kestra/kestra:latest
+    pull_policy: always
+    user: "root"
+    command: server standalone
+    volumes:
+      - kestra-data:/app/storage
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/kestra-wd:/tmp/kestra-wd
+    environment:
+      KESTRA_CONFIGURATION: |
+        datasources:
+          postgres:
+            url: jdbc:postgresql://pgdatabase:5432/ny_taxi
+            driverClassName: org.postgresql.Driver
+            username: root
+            password: root
+        kestra:
+          server:
+            basicAuth:
+              enabled: false
+              username: "admin@kestra.io"
+              password: kestra
+          repository:
+            type: postgres
+          storage:
+            type: local
+            local:
+              basePath: "/app/storage"
+          queue:
+            type: postgres
+          tasks:
+            tmpDir:
+              path: /tmp/kestra-wd/tmp
+          url: http://localhost:8080/
+      FLYWAY_BASELINE_ON_MIGRATE: "true"  # Add this line
+    ports:
+      - "8082:8080"
+      - "8081:8081"
+    networks:
+      - shared-network 
+    
+volumes:
+  kestra-data:
+    driver: local
+
+
+networks:
+  shared-network:
+    driver: bridge
