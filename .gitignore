@@ -1,12 +1,12 @@
-2_sql_docker/.ipynb_checkpoints
+01-docker-terraform/.ipynb_checkpoints
+01-docker-terraform/data_pgadmin
+01-docker-terraform/ny_taxi_postgres_data
+01-docker-terraform/yellow_tripdata_2021-01.csv
+01-docker-terraform/green_tripdata_2019-10.csv.gz
+01-docker-terraform/green_tripdata_2019-10.csv
+01-docker-terraform/taxi_zone_lookup.csv
+01-docker-terraform/yellow_head.csv
+01-docker-terraform/yellow_head.csv
+01-docker-terraform/yellow_tripdata_2021-01.csv
 
-2_sql_docker/data_pgadmin
-
-
-2_sql_docker/ny_taxi_postgres_data
-
-
-2_sql_docker/yellow_tripdata_2021-01.csv
-
-
-
+02-workflow-orchestration/pgadmin_data_new
