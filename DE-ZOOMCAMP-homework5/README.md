@@ -9,10 +9,28 @@
 - Create a local spark session
 - Execute spark.version.
 
-What's the output?
+Method used: I already installed Spark by following the videos. To run Pyspark, first I add this in the terminal
+```bash
+export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
+export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH"
+```
+Then I open python interpreter and run these commands
+```bash
+python
 
-> [!NOTE]
-> To install PySpark follow this [guide](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/pyspark.md)
+import spark
+
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+   .master("local[*]") \
+  .appName('test') \
+  .getOrCreate()
+
+spark.version
+```
+
+Output: '3.4.4'
 
 ### Question 2: 
 
