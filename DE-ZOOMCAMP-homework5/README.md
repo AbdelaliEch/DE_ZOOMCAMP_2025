@@ -1,10 +1,4 @@
-## Module 5 Homework  (DRAFT)
-
-Solution: https://www.youtube.com/watch?v=YtddC7vJOgQ
-
-In this homework we'll put what we learned about Spark in practice.
-
-For this homework we will be using the FHV 2019-10 data found here. [FHV Data](https://github.com/DataTalksClub/nyc-tlc-data/releases/download/fhv/fhv_tripdata_2019-10.csv.gz)
+## Module 5 Homework
 
 ### Question 1: 
 
@@ -15,10 +9,28 @@ For this homework we will be using the FHV 2019-10 data found here. [FHV Data](h
 - Create a local spark session
 - Execute spark.version.
 
-What's the output?
+Method used: I already installed Spark by following the videos. To run Pyspark, first I add this in the terminal
+```bash
+export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
+export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH"
+```
+Then I open python interpreter and run these commands
+```bash
+python
 
-> [!NOTE]
-> To install PySpark follow this [guide](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/pyspark.md)
+import spark
+
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+   .master("local[*]") \
+  .appName('test') \
+  .getOrCreate()
+
+spark.version
+```
+
+Output: '3.4.4'
 
 ### Question 2: 
 
