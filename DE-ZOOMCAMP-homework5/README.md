@@ -78,7 +78,8 @@ What is the length of the longest trip in the dataset in hours?
 - 7.68 Hours
 - 3.32 Hours
 
-
+For this question, I also used the jupyter file "**homework5-2.ipynb**".    
+Answer: 631,152.50 Hours
 
 ### Question 5: 
 
