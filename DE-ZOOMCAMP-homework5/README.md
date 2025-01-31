@@ -64,8 +64,8 @@ Consider only trips that started on the 15th of October.
 - 452,470
 - 62,610
 
-> [!IMPORTANT]
-> Be aware of columns order when defining schema
+For this question, I created the jupyter file "**homework5-2.ipynb**".  
+Answer: 62,610
 
 ### Question 4: 
 
