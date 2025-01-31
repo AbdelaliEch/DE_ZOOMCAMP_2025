@@ -47,7 +47,9 @@ What is the average size of the Parquet (ending with .parquet extension) Files t
 - 25MB
 - 87MB
 
-
+For this question I created the jupyter file "**homework5.ipynb**".  
+For me, the size of each of the 6 parquet files was: 6.4MB, so:  
+Answer: 6MB
 
 ### Question 3: 
 
