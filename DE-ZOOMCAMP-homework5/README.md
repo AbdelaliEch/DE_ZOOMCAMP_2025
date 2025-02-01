@@ -30,7 +30,7 @@ spark = SparkSession.builder \
 spark.version
 ```
 
-Output: '3.4.4'
+**Output: '3.4.4'**
 
 ### Question 2: 
 
@@ -47,9 +47,9 @@ What is the average size of the Parquet (ending with .parquet extension) Files t
 - 25MB
 - 87MB
 
-For this question, I first downloaded the data using wget then I created the jupyter file "**homework5.ipynb**".  
-For me, the size of each of the 6 parquet files was: 6.4MB. 
-Answer: 6MB
+For this question, I first downloaded the data using wget then I created the jupyter file "**homework5.ipynb**".    
+For me, the size of each of the 6 parquet files was: 6.4MB.   
+**Answer: 6MB**
 
 ### Question 3: 
 
@@ -64,8 +64,8 @@ Consider only trips that started on the 15th of October.
 - 452,470
 - 62,610
 
-> [!IMPORTANT]
-> Be aware of columns order when defining schema
+For this question, I created the jupyter file "**homework5-2.ipynb**".  
+**Answer: 62,610**
 
 ### Question 4: 
 
@@ -78,7 +78,8 @@ What is the length of the longest trip in the dataset in hours?
 - 7.68 Hours
 - 3.32 Hours
 
-
+For this question, I also used the jupyter file "**homework5-2.ipynb**"    
+**Answer: 631,152.50 Hours**
 
 ### Question 5: 
 
@@ -91,14 +92,12 @@ Spark’s User Interface which shows the application's dashboard runs on which l
 - 4040
 - 8080
 
+**Answer: 4040**
 
 
 ### Question 6: 
 
 **Least frequent pickup location zone**
-
-Load the zone lookup data into a temp view in Spark</br>
-[Zone Data](https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv)
 
 Using the zone lookup data and the FHV October 2019 data, what is the name of the LEAST frequent pickup location Zone?</br>
 
@@ -107,8 +106,6 @@ Using the zone lookup data and the FHV October 2019 data, what is the name of th
 - Union Sq
 - Crown Heights North
 
-
-## Submitting the solutions
-
-- Form for submitting: https://courses.datatalks.club/de-zoomcamp-2024/homework/hw5
-- Deadline: See the website
+For this question, I also used the jupyter file "**homework5-2.ipynb**".
+I did it in two ways, with and without SQL
+**Answer: Jamaica Bay**
