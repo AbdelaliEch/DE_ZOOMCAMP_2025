@@ -78,7 +78,7 @@ What is the length of the longest trip in the dataset in hours?
 - 7.68 Hours
 - 3.32 Hours
 
-For this question, I also used the jupyter file "**homework5-2.ipynb**".    
+For this question, I also used the jupyter file "**homework5-2.ipynb**"    
 Answer: 631,152.50 Hours
 
 ### Question 5: 
@@ -92,14 +92,12 @@ Spark’s User Interface which shows the application's dashboard runs on which l
 - 4040
 - 8080
 
+Answer: 4040
 
 
 ### Question 6: 
 
 **Least frequent pickup location zone**
-
-Load the zone lookup data into a temp view in Spark</br>
-[Zone Data](https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv)
 
 Using the zone lookup data and the FHV October 2019 data, what is the name of the LEAST frequent pickup location Zone?</br>
 
@@ -108,6 +106,9 @@ Using the zone lookup data and the FHV October 2019 data, what is the name of th
 - Union Sq
 - Crown Heights North
 
+For this question, I also used the jupyter file "**homework5-2.ipynb**".
+I did it in two ways, with and without SQL
+Answer: Jamaica Bay
 
 ## Submitting the solutions
 
