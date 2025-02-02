@@ -10,3 +10,6 @@
 01-docker-terraform/yellow_tripdata_2021-01.csv
 
 02-workflow-orchestration/pgadmin_data_new
+
+
+*.json
