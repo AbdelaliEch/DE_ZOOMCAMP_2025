@@ -3,7 +3,7 @@
 ## Data upload:
 I used the kestra flow "homework3_data_upload.yaml" to upload the Yellow Taxi Trip Records for January 2024 - June 2024
 
-## SETUP:  
+## BIG QUERY SETUP:  
 Create an external table using the Green Taxi Trip Records Data for 2022.
 ```sql
 CREATE OR REPLACE EXTERNAL TABLE `de_zoomcamp.green_tripdata_2022_external`
