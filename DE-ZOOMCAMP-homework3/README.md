@@ -4,7 +4,7 @@
 I used the kestra flow "homework3_data_upload.yaml" to upload the Yellow Taxi Trip Records for January 2024 - June 2024 (backfilling)
 
 ## BIG QUERY SETUP:  
-Create an external table using the Green Taxi Trip Records Data for 2022.
+Create an external table using the Yellow Taxi Trip Records.
 ```sql
 CREATE OR REPLACE EXTERNAL TABLE `de_zoomcamp.yellow_tripdata_2024_external`
 OPTIONS (
@@ -12,7 +12,7 @@ OPTIONS (
   uris = ['gs://kestra-project-448315-bucket/yellow_tripdata_2024-*.parquet']
 );
 ```
-Create a table in BQ using the Green Taxi Trip Records for 2022 (do not partition or cluster this table).
+Create a (regular/materialized) table in BQ using the Yellow Taxi Trip Records (do not partition or cluster this table).
 ```sql
 CREATE OR REPLACE TABLE `de_zoomcamp.yellow_tripdata_2024` AS
 SELECT * FROM `de_zoomcamp.yellow_tripdata_2024_external`;
