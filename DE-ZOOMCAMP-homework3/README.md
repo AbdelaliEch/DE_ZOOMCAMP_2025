@@ -101,13 +101,13 @@ WHERE tpep_dropoff_datetime>='2024-03-01 00:00:00' AND tpep_dropoff_datetime<='2
 ```
 **Answer:** 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table
 
-## Question 6: 
+## Question 7: 
 Where is the data stored in the External Table you created?
 
 - Big Query
+- Container Registry
 - GCP Bucket
 - Big Table
-- Container Registry  
 
 **Answer:** GCP Bucket
 
