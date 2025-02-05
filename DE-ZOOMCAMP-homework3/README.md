@@ -33,17 +33,17 @@ SELECT COUNT(1) FROM `de_zoomcamp.yellow_tripdata_2024`;
 
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.</br> 
-What is the estimated amount of data that will be read when this query is executed on the External Table and the Table?
+What is the **estimated amount** of data that will be read when this query is executed on the External Table and the Table?
 
-- 0 MB for the External Table and 6.41MB for the Materialized Table
 - 18.82 MB for the External Table and 47.60 MB for the Materialized Table
+- 0 MB for the External Table and 155.12 MB for the Materialized Table
+- 2.14 GB for the External Table and 0MB for the Materialized Table
 - 0 MB for the External Table and 0MB for the Materialized Table
-- 2.14 MB for the External Table and 0MB for the Materialized Table  
 ```sql
-SELECT COUNT(DISTINCT PULocationID) FROM `de_zoomcamp.green_tripdata_2022_external`;
-SELECT COUNT(DISTINCT PULocationID) FROM `de_zoomcamp.green_tripdata_2022`;
+SELECT COUNT(DISTINCT PULocationID) FROM `de_zoomcamp.yellow_tripdata_2024_external`;
+SELECT COUNT(DISTINCT PULocationID) FROM `de_zoomcamp.yellow_tripdata_2024`;
 ```
-**Answer:** 0 MB for the External Table and 6.41MB for the Materialized Table
+**Answer:** 0 MB for the External Table and 155.12 MB for the Materialized Table
 
 ## Question 3:
 How many records have a fare_amount of 0?
