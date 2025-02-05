@@ -65,20 +65,20 @@ SELECT COUNT(1) FROM `de_zoomcamp.yellow_tripdata_2024` WHERE fare_amount=0;
 ```
 **Answer:** 8,333
 
-## Question 4:
-What is the best strategy to make an optimized table in Big Query if your query will always order the results by PUlocationID and filter based on lpep_pickup_datetime? (Create a new table with this strategy)
-- Cluster on lpep_pickup_datetime Partition by PUlocationID
-- Partition by lpep_pickup_datetime  Cluster on PUlocationID
-- Partition by lpep_pickup_datetime and Partition by PUlocationID
-- Cluster on by lpep_pickup_datetime and Cluster on PUlocationID  
+## Question 5:
+What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
+- Partition by tpep_dropoff_datetime and Cluster on VendorID
+- Cluster on by tpep_dropoff_datetime and Cluster on VendorID
+- Cluster on tpep_dropoff_datetime Partition by VendorID
+- Partition by tpep_dropoff_datetime and Partition by VendorID
 ```sql
-CREATE OR REPLACE TABLE `de_zoomcamp.green_tripdata_2022_partitioned_clustered`
-PARTITION BY DATE(lpep_pickup_datetime)
-CLUSTER BY PULocationID
+CREATE OR REPLACE TABLE `de_zoomcamp.yellow_tripdata_2024_partitioned_clustered`
+PARTITION BY DATE(tpep_dropoff_datetime)
+CLUSTER BY VendorID
 AS
-SELECT * FROM `de_zoomcamp.green_tripdata_2022`;
+SELECT * FROM `de_zoomcamp.yellow_tripdata_2024`;
 ```
-**Answer:** Partition by lpep_pickup_datetime Cluster on PUlocationID
+**Answer:** Partition by tpep_dropoff_datetime and Cluster on VendorID
 
 ## Question 5:
 Write a query to retrieve the distinct PULocationID between lpep_pickup_datetime
