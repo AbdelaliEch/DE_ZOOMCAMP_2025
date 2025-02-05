@@ -92,26 +92,14 @@ Choose the answer which most closely matches.</br>
 - 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table
 - 5.87 MB for non-partitioned table and 0 MB for the partitioned table
 - 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table
-## Question 5:
-Write a query to retrieve the distinct PULocationID between lpep_pickup_datetime
-06/01/2022 and 06/30/2022 (inclusive)</br>
-
-Use the materialized table you created earlier in your from clause and note the estimated bytes. Now change the table in the from clause to the partitioned table you created for question 4 and note the estimated bytes processed. What are these values? </br>
-
-Choose the answer which most closely matches.</br> 
-
-- 22.82 MB for non-partitioned table and 647.87 MB for the partitioned table
-- 12.82 MB for non-partitioned table and 1.12 MB for the partitioned table
-- 5.63 MB for non-partitioned table and 0 MB for the partitioned table
-- 10.31 MB for non-partitioned table and 10.31 MB for the partitioned table  
 ```sql
-SELECT DISTINCT(PULocationID) FROM `de_zoomcamp.green_tripdata_2022`
-WHERE lpep_pickup_datetime>='2022-06-01 00:00:00' AND lpep_pickup_datetime<='2022-06-30 00:00:00';
+SELECT DISTINCT(VendorID) FROM `de_zoomcamp.yellow_tripdata_2024`
+WHERE tpep_dropoff_datetime>='2024-03-01 00:00:00' AND tpep_dropoff_datetime<='2024-03-15 00:00:00';
 
-SELECT DISTINCT(PULocationID) FROM `de_zoomcamp.green_tripdata_2022_partitioned_clustered`
-WHERE lpep_pickup_datetime>='2022-06-01 00:00:00' AND lpep_pickup_datetime<='2022-06-30 00:00:00';
+SELECT DISTINCT(VendorID) FROM `de_zoomcamp.yellow_tripdata_2024_partitioned_clustered`
+WHERE tpep_dropoff_datetime>='2024-03-01 00:00:00' AND tpep_dropoff_datetime<='2024-03-15 00:00:00';
 ```
-**Answer:** 12.82 MB for non-partitioned table and 1.12 MB for the partitioned table
+**Answer:** 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table
 
 ## Question 6: 
 Where is the data stored in the External Table you created?
