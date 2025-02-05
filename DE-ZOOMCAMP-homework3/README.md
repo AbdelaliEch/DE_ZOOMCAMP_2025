@@ -19,15 +19,17 @@ SELECT * FROM `de_zoomcamp.yellow_tripdata_2024_external`;
 ```
 
 ## Question 1:
-What is count of records for the 2022 Green Taxi Data??
-- 65,623,481
+Question 1: What is count of records for the 2024 Yellow Taxi Data?
+- 65,623
 - 840,402
-- 1,936,423
-- 253,647  
+- 20,332,093
+- 85,431,289
+
+We can just read table details or use a query
 ```sql
-SELECT COUNT(1) FROM `de_zoomcamp.green_tripdata_2022`;
+SELECT COUNT(1) FROM `de_zoomcamp.yellow_tripdata_2024`;
 ```
-**Answer:** 840,402
+**Answer:** 20,332,093
 
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.</br> 
