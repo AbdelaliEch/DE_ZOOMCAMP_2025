@@ -6,10 +6,10 @@ I used the kestra flow "homework3_data_upload.yaml" to upload the Yellow Taxi Tr
 ## BIG QUERY SETUP:  
 Create an external table using the Green Taxi Trip Records Data for 2022.
 ```sql
-CREATE OR REPLACE EXTERNAL TABLE `de_zoomcamp.green_tripdata_2022_external`
+CREATE OR REPLACE EXTERNAL TABLE `de_zoomcamp.yellow_tripdata_2024_external`
 OPTIONS (
   format = 'PARQUET',
-  uris = ['gs://kestra-project-448315-bucket/green_tripdata_2022-*.parquet']
+  uris = ['gs://kestra-project-448315-bucket/yellow_tripdata_2024-*.parquet']
 );
 ```
 Create a table in BQ using the Green Taxi Trip Records for 2022 (do not partition or cluster this table).
