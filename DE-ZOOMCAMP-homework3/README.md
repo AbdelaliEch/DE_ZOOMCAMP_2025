@@ -80,6 +80,18 @@ SELECT * FROM `de_zoomcamp.yellow_tripdata_2024`;
 ```
 **Answer:** Partition by tpep_dropoff_datetime and Cluster on VendorID
 
+## Question 6:
+Write a query to retrieve the distinct VendorIDs between tpep_dropoff_datetime
+2024-03-01 and 2024-03-15 (inclusive)</br>
+
+Use the materialized table you created earlier in your from clause and note the estimated bytes. Now change the table in the from clause to the partitioned table you created for question 5 and note the estimated bytes processed. What are these values? </br>
+
+Choose the answer which most closely matches.</br> 
+
+- 12.47 MB for non-partitioned table and 326.42 MB for the partitioned table
+- 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table
+- 5.87 MB for non-partitioned table and 0 MB for the partitioned table
+- 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table
 ## Question 5:
 Write a query to retrieve the distinct PULocationID between lpep_pickup_datetime
 06/01/2022 and 06/30/2022 (inclusive)</br>
