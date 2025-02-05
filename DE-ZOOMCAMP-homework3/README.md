@@ -1,7 +1,7 @@
 # DE-ZOOMCAMP-homework3
 
 ## Data upload:
-I used the kestra flow "homework3_data_upload.yaml" to upload the Yellow Taxi Trip Records for January 2024 - June 2024
+I used the kestra flow "homework3_data_upload.yaml" to upload the Yellow Taxi Trip Records for January 2024 - June 2024 (backfilling)
 
 ## BIG QUERY SETUP:  
 Create an external table using the Green Taxi Trip Records Data for 2022.
