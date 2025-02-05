@@ -111,7 +111,7 @@ Where is the data stored in the External Table you created?
 
 **Answer:** GCP Bucket
 
-## Question 7:
+## Question 8:
 It is best practice in Big Query to always cluster your data:
 - True
 - False  
