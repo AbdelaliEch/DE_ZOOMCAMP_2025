@@ -56,14 +56,14 @@ doubling the estimated bytes processed.
 
 ## Question 4:
 How many records have a fare_amount of 0?
-- 12,488
-- 128,219
-- 112
-- 1,622  
+- 128,210
+- 546,578
+- 20,188,016
+- 8,333  
 ```sql
-SELECT COUNT(1) FROM `de_zoomcamp.green_tripdata_2022` WHERE fare_amount=0; 
+SELECT COUNT(1) FROM `de_zoomcamp.yellow_tripdata_2024` WHERE fare_amount=0;
 ```
-**Answer:** 1,622
+**Answer:** 8,333
 
 ## Question 4:
 What is the best strategy to make an optimized table in Big Query if your query will always order the results by PUlocationID and filter based on lpep_pickup_datetime? (Create a new table with this strategy)
